@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ne">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>हाम्रो बज्ने घन्ती</title>
+
+        <!-- SEO Meta Tags -->
+        <meta
+            name="description"
+            content="हाम्रो बज्ने घन्ती - An interactive bell app. Tap or shake your phone to ring the bell with beautiful ripple animations."
+        />
+        <meta
+            name="keywords"
+            content="bell app, घन्ती, ringing bell, interactive bell, shake to ring, Nepali bell, बज्ने घन्ती"
+        />
+        <meta name="author" content="Bell App" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="Nepali, English" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="हाम्रो बज्ने घन्ती" />
+        <meta
+            property="og:description"
+            content="An interactive bell app. Tap or shake your phone to ring the bell with beautiful ripple animations."
+        />
+        <meta property="og:image" content="Ghanti.png" />
+        <meta property="og:locale" content="ne_NP" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="हाम्रो बज्ने घन्ती | Interactive Bell App"
+        />
+        <meta
+            name="twitter:description"
+            content="An interactive bell app. Tap or shake your phone to ring the bell with beautiful ripple animations."
+        />
+        <meta name="twitter:image" content="Ghanti.png" />
+
+        <!-- Mobile App Meta -->
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="हाम्रो बज्ने घन्ती" />
+        <meta name="theme-color" content="#0094da" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="Ghanti.png" />
+        <link rel="apple-touch-icon" href="Ghanti.png" />
+
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="bell-container" id="bell-container">
+                <div class="ripple"></div>
+                <div class="ripple"></div>
+                <div class="ripple"></div>
+                <div class="ripple"></div>
+                <div class="ripple"></div>
+                <div class="ripple"></div>
+                <img
+                    src="Ghanti.png"
+                    alt="Bell"
+                    class="bell"
+                    id="bell"
+                    draggable="false"
+                />
+            </div>
+
+            <div class="motion-info">
+                <p id="motion-status">Tap bell to ring</p>
+                <button id="enable-motion" class="motion-btn">
+                    Enable Motion
+                </button>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
